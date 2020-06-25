@@ -32,9 +32,5 @@ _INTOSC              EQU        3FFDh
 _EXTRCIO             EQU        3FFEh       
 _EXTRC               EQU        3FFFh       
 
-
-;crystal version
-;__CONFIG _FCMEN_OFF & _IESO_OFF & _BOR_OFF & _CPD_OFF & _CP_OFF & _MCLRE_ON & _WDT_ON & _HS_OSC  & _EXTRC_OSC_NOCLKOUT
-
-;internal osc version
-__CONFIG _FCMEN_OFF & _IESO_OFF & _BOR_OFF & _CPD_OFF & _CP_OFF & _MCLRE_OFF & _WDT_ON & _INTRC_OSC_NOCLKOUT
+__CONFIG _FCMEN_OFF & _IESO_OFF & _BOR_OFF & _CPD_OFF & _CP_OFF & _MCLRE_OFF & _WDT_ON & _HS_OSC  & _EXTRC_OSC_NOCLKOUT
+;Note enabling brown out detect uses 0.3mA in sleep! 
